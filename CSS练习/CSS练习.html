@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS练习</title>
+    <style>
+        p {
+            color: red;
+            /* 文本颜色 */
+            font-size: 100px;
+            /* 字体大小 */
+            background-color: yellow;
+            /* 背景颜色 */
+            font-family: "宋体";
+            /* 字体 */
+            font-weight: 100;
+            /* 字体粗细 */
+            font-style: italic;
+            /* 字体样式 */
+            /* 复合属性：font:font-style font-weight font-size font-family; */
+            text-align: center;
+            /* 文本居中对齐盒子 */
+            text-decoration: line-through;
+            /* 装饰文本 */
+            text-indent: 2em;
+            /* 文本缩进1em:一个文字 */
+            line-height: 20px;
+            /* 行间距 */
+            /* 标签选择器：选择某一类全部标签 */
+        }
+
+
+        .类选择器 {
+            color: blue
+                /* 类选择器：选择同一类（class）标签 */
+        }
+
+        .font {
+            font-size: 40px;
+        }
+
+        #id选择器 {
+            color: green;
+            /* 只能调用一次 */
+        }
+
+        * {
+            color: yellow;
+            /* 通配符选择器：更改所有 */
+        }
+
+        ol li {
+            color: purple;
+            /* 后代选择器：选择父标签内的子标签 */
+            /* 可与其他选择器组合 */
+        }
+
+        ol>ins {
+            color: blue;
+            /* 子元素选择器：选择下一级中的元素 */
+        }
+
+        h1,
+        h2 {
+            color: pink;
+            /* 并集选择器：同时选择多个 */
+        }
+
+        a:link {
+            color: black;
+            /* 链接伪类选择器link：选出未访问过的链接 */
+        }
+
+        a:visited {
+            color: red;
+            /* 链接伪类选择器visited：选出访问过的链接 */
+        }
+
+        a:hover {
+            color: blue;
+            /* 链接伪类选择器hover：选出鼠标停留的链接 */
+        }
+
+        a:active {
+            color: white;
+            /* 链接伪类选择器active:选出鼠标按住的链接 */
+            /* 顺序重要 */
+        }
+
+        input:focus {
+            background-color: red;
+            color: black;
+            /* focus伪类选择器：选出鼠标点击的表单 */
+        }
+    </style>
+    <!-- 内部样式表 -->
+    <link rel="stylesheet" href="外部样式表.css">
+    <!-- 引用外部样式表 -->
+</head>
+
+<body>
+    <p>标签选择器</p>
+    <div class="类选择器">类选择器</div>
+    <div class="类选择器 font">多类名</div>
+    <div id="id选择器">id选择器</div>
+    <div>通配符选择器</div>
+    <div style="color: brown;">行内式样式表</div>
+    <div class="外部样式表">外部样式表</div>
+    <ol>
+        <ins>子元素选择器</ins>
+        <li>后代选择器</li>
+    </ol>
+    <h1>并集选择器</h1>
+    <h2>并集选择器</h2>
+    <a href="#" target="_blank">链接伪类选择器</a>
+    <input type="text" value="伪类选择器">
+</body>
+
+</html>

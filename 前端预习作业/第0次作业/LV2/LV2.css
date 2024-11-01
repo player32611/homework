@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background-color: skyblue;
+    width: 1000px;
+    /* height: 500px; */
+    margin: 200px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    height: 50px;
+}
+
+.盒子1 {
+    background-color: rgb(18, 160, 231);
+    margin: 10px auto;
+    height: 100px;
+    width: 300px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 25px
+}
+
+p {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.小盒子1 {
+    background-color: rgb(18, 160, 231);
+    height: 100px;
+    width: 300px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    float: left;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.小盒子2 {
+    background-color: rgb(18, 160, 231);
+    height: 100px;
+    width: 300px;
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: right;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.text {
+    float: left;
+    display: block;
+    width: 360px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+
+}

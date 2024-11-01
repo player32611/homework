@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+</head>
+
+<body>
+    <table align="center" border="1" cellpadding="100" cellspacing="0" width="200">
+        <!--align对齐方式left,center,right--><!--border边框--><!--cellpadding内容与边框的距离--><!--cellspacing格与格的距离-->
+        <thead>
+            <tr>
+                <th>表头</th>
+                <th>加粗</th>
+                <th>居中</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://thwiki.cc/" target="_self">4</a></td>
+                <td><img /src="Sansanimated.webp"></td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </tbody>
+    </table>
+    <table align="center" border="1" cellpadding="100" cellspacing="0" width="200">
+        <thead>
+            <tr>
+                <th></th>
+                <th colspan="2">跨列合并</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">跨行合并</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <ul>
+        <li>无序</li>
+        <li>列表</li>
+    </ul>
+    <ol>
+        <li>有序</li>
+        <li>列表</li>
+    </ol>
+    <dl>
+        <dt>自</dt>
+        <dd>定义</dd>
+        <dt>列</dt>
+        <dd>表</dd>
+
+    </dl>
+    <form>
+        文本框<input type="text" placeholder="描述文字">
+        密码<input type="password" maxlength="3">长度
+        <input type="radio" name="1" id="直接选择"><label for="直接选择">单选</label><input type="radio" name="1">按钮
+        复<input type="checkbox">选<input type="checkbox">框<input type="checkbox" checked>默认选中
+        提交<input type="submit" value="注册">
+        重新<input type="reset" value="填写">
+        <input type="button" value="普通按钮">
+        上传<input type="file">
+        <input type="image">
+        <input type="hidden">
+    </form>
+    <select>
+        <option>下</option>
+        <option>拉</option>
+        <option>表</option>
+        <option>单</option>
+    </select>
+    <textarea rows="10" cols="20">
+文本域表单
+    </textarea>
+</body>
+
+</html>

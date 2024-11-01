@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LV1</title>
+    <style>
+        .box {
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="middle">一级标题</h1>
+    <h6 align="middle">六级标题</h6>
+    <div align="middle"><s>不知道放什么，就随便放了一张</s></div>
+    <div align="middle"><img /src="LV1.png" title="我是作业1"></div>
+    <div align="middle" class="box">我不是第一个盒子</div>
+    <div align="middle"><a href="https://space.bilibili.com/415434293" target="_blank">去pink那好好学学吧</a></div>
+    <table align="center" border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th rowspan="2">无意义的填表</th>
+            </tr>
+        </thead>
+        <tbody>
+            <form>
+                <tr>
+                    <td>姓名</td>
+                    <td colspan="2"><input type="text" placeholder="写名字"></td>
+                </tr>
+                <tr>
+                    <td>密码？</td>
+                    <td colspan="2">
+                        <input type="password" maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>性别</td>
+                    <td colspan="2">
+                        <input type="radio" name="性别" id="男"><label for="男">男</label><input type="radio" name="性别"
+                            id="女"><label for="女">女</label><input type="radio" name="性别" id="你想填别的也行<"><label
+                            for="你想填别的也行<">你想填别的也行</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>居住地</td>
+                    <td colspan="2">
+                        <select>
+                            <option>重庆</option>
+                            <option>重庆市</option>
+                            <option>南岸区</option>
+                            <option>南山街道</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td>部门</td>
+                    <td colspan="2"><input type="checkbox" id="前端" checked><label for="前端">前端</label><input
+                            type="checkbox" id="后端">
+                        <label for="后端">后端</label><input type="checkbox" id="移动"><label for="移动">移动</label><input
+                            type="checkbox" id="运维"><label for="运维">运维</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>个人简介</td>
+                    <td colspan="2"><textarea rows="5" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td>上传资料</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="提交"><input type="reset" value="重新填写"></td>
+                </tr>
+            </form>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

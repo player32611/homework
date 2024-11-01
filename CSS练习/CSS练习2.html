@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS练习2</title>
+</head>
+<style>
+    a {
+        height: 100px;
+        width: 100px;
+        background: rgba(0, 0, 255, 0.5);
+        /* 背景半透明 */
+        display: block;
+        /* 转为块级元素 */
+        line-height: 100px;
+        /* 垂直居中：行高等于盒子高度 */
+        margin: 20px auto;
+        /* 盒子外边距-下 */
+        /* margin简写与padding一致 */
+        /* 块级盒子水平居中：左右外边距为auto */
+        border-radius: 10px;
+        /* 圆角边框:圆角半径;可用百分比表示;顺序:上左,上右,下右,下左;也可设置单个角 */
+        box-shadow: 10px 10px 10px 10px rgb(0, 0, 0, 0.3);
+        /* 盒子阴影:水平位置(允许负值),垂直位置(允许负值),(阴影虚实),(阴影尺寸),(颜色), (内部或外部阴影:outset/inset)*/
+    }
+
+    div {
+        display: inline;
+        /* 转为行内元素 */
+        text-shadow: 10px 10px 3px rgb(0, 0, 0, 0.3);
+        /* 文字阴影:水平位置(允许负值),垂直位置(允许负值),(阴影虚实),(颜色) */
+    }
+
+    span {
+        display: inline-block;
+        /* 转为行内块元素 */
+    }
+
+    p {
+        width: 1680px;
+        height: 105px;
+        background-image: url(摩多罗壁纸.png);
+        /* 背景图片 */
+        background-repeat: no-repeat;
+        /* 背景图片不平铺 */
+        background-position: center center;
+        /* 背景位置-方位名词无顺序 */
+        border-width: 4px;
+        /* 边框粗细 */
+        border-style: solid;
+        /* 边框样式-dashed:虚线；dotted：点线 */
+        border-color: blue;
+        /* 边框颜色 */
+        /* border边框复合 */
+        /* border-top:设定上边框 */
+        padding-left: 20px;
+        /* 内容与边框距离 */
+        /* padding简写：一个值代表上下左右；两个值代表上下，左右；三个代表上，左右，下；四个代表上，右，下，左 */
+    }
+
+    b {
+        width: 300px;
+        height: 300px;
+        background-image: url(摩多罗壁纸.png);
+        display: block;
+        background-repeat: no-repeat;
+        background-position: 100px 100px;
+        /* 背景位置-精确单位；x,y */
+        /* 背景位置-方位名词与精确单位可混用 */
+        background-attachment: fixed;
+        /* 背景附着 */
+        /* background背景复合写法:颜色,地址,平铺,滚动,位置 */
+        float: right;
+        /* 右浮动 */
+    }
+
+    table,
+    th {
+        border: 5px solid purple;
+        border-collapse: collapse;
+        /* 边框合并 */
+    }
+</style>
+
+<body>
+    <a href="#">转为块级元素</a>
+    <div>转为行内元素</div>
+    <span>转为行内块元素</span>
+    <p>背景图片-方位名词</p>
+    <b>背景图片-精确方位</b>
+    <table align="center" cellspacing="0">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+        </tr>
+        <tr>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+        </tr>
+    </table>
+</body>
+
+</html>

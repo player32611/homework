@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+a:hover {
+    color: blue;
+}
+
+.body {
+    width: 435px;
+    height: 660px;
+    background-color: #fff;
+    margin: 50px auto 0px;
+}
+
+
+.logo {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.text {
+    width: 335px;
+    height: 100px;
+    margin: 0 50px;
+}
+
+
+select {
+    height: 50px;
+    width: 110px;
+    float: left;
+    border-width: 2px;
+    border-color: black;
+}
+
+.phonenumber {
+    height: 46px;
+    width: 223px;
+    float: left;
+    border-width: 2px;
+    border-left-width: 0;
+    border-color: black;
+}
+
+.password {
+    float: left;
+    height: 48px;
+    width: 331px;
+    border-width: 2px;
+    border-top-width: 0;
+}
+
+.login {
+    width: 335px;
+    height: 20px;
+    line-height: 20px;
+    margin: 5px 50px;
+    background-color: #fff;
+}
+
+
+.login a {
+    float: right;
+    text-decoration: none;
+}
+
+#login {
+    width: 15px;
+    height: 15px;
+    margin-top: 1px;
+}
+
+.login span {
+    float: right;
+    color: #666;
+}
+
+.button input {
+    width: 335px;
+    height: 50px;
+    margin: 50px 50px 0;
+    border-color: red;
+    background-color: red;
+    color: #fff;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.register {
+    display: block;
+    width: 31px;
+    height: 20px;
+    margin: 20px 202px;
+    color: #666;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.photo {
+    width: 435px;
+    height: 50px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.photo img {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+}
+
+.agreement {
+    font-size: medium;
+    text-align: center;
+}
+
+.agreement a {
+    text-decoration: none;
+}
