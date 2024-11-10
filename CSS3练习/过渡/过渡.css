@@ -1,0 +1,14 @@
+div {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    transition: height 2s, width 2s, box-shadow 2s, background-color 2s;
+}
+
+div:hover {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    box-shadow: 10px 10px 10px 10px rgb(0, 0, 0, 0.3);
+}
