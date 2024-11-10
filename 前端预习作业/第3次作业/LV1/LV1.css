@@ -1,0 +1,46 @@
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.box {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.box a {
+    text-decoration: none;
+}
+
+.box p {
+    color: red;
+}
+
+.box div {
+    width: 260px;
+    height: 50px;
+    background-color: grey;
+    transition: font-size 1s, background-color 1s;
+}
+
+.box div:hover {
+    background-color: yellow;
+    font-size: 14px;
+}
+
+.box ul li:nth-child(1) {
+    font-size: 20px;
+}
+
+.box ul li:nth-child(2) {
+    font-size: 30px;
+}
+
+.box ul li:nth-child(3) {
+    font-size: 40px;
+}
