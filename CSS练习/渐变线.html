@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Underline for Each Line</title>
+    <style>
+        /* 定义基本样式 */
+        .gradient-underline {
+            position: relative;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 24px;
+            /* 设置字体大小 */
+            padding: 10px;
+            /* 设置一些内边距 */
+            margin-bottom: 10px;
+            /* 设置行间距 */
+        }
+
+        /* 定义伪元素用于下划线 */
+        .gradient-underline::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 2px;
+            /* 下划线的高度 */
+            background: linear-gradient(to right, transparent, #ff6a00, transparent);
+            transition: transform 0.3s ease;
+            transform: scaleX(0);
+            /* 初始状态，下划线不可见 */
+            transform-origin: left center;
+        }
+
+        /* 鼠标悬停时的样式 */
+        .gradient-underline:hover::after {
+            transform: scaleX(1);
+            /* 鼠标悬停时，下划线展开 */
+        }
+
+        /* 鼠标移出时，下划线沿反方向消失 */
+        .gradient-underline:hover {
+            color: #ff6a00;
+            /* 文字颜色变化 */
+        }
+
+        .gradient-underline:hover::after {
+            transform-origin: right center;
+            transition: transform 0.3s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gradient-underline">Line 1: Hover over me</div>
+    <div class="gradient-underline">Line 2: Hover over me</div>
+    <div class="gradient-underline">Line 3: Hover over me</div>
+
+</body>
+
+</html>
