@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="练习.js">//引用外部js文件；内部script中的js不执行,须创建新script
+        document.write("内容");//往网页中写入内容
+        console.log("控制台");//向控制台输出内容
+    </script>
+    <script type="text/javascript">alert("警告");//弹出警告框</script>
+</head>
+
+<body>
+    <input type="button" value="123" onclick="alert('手真欠')"><!-- 内部js -->
+    <a href="javascript:alert('手真欠')">123</a><!-- 内部js -->
+</body>
+
+</html>
