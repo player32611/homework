@@ -1,35 +1,15 @@
-// 16
-const insertElement = document.getElementById('insert');
-const buttonElement = document.querySelector('button');
-function insert() {
-    insertElement.innerHTML = `
-                <p>Hello world!</p>
-                <div style="position: relative; top: 50px; height: 50px; width: 50px; background-color: mediumpurple;"></div>
-                <div class="box">Sample Text</div>
-            `
-    // 这里在insertElement这里添加了三个子元素，insertElement还是存在的
-    buttonElement.outerHTML = `<p id="add" onclick="pClick()">Don't click me!</p>`
-    // 这里把之前的 <button> 改成了 <p>  button也被删除了
-}
+let text = `有一天，我在上某实验课的时候感到非常无聊，看着要完成的实验报告发呆<br>
+然后我就想，有没有一种方法可以让我不直接在输入框内复制粘贴输入报告内容完成这份实验报告呢<br>
+于是经过我一段时间的思考，在控制台输入了一段代码，通过一种不一样的方式写我的实验报告（内容是乱写的...)<br>
+请看下面的视频 （视频已加速）：`
+let n = 0
+const p = (n) => new Promise(resolve => { setTimeout(() => resolve(n), 1000) })
 
-function pClick() {
-    //  修改刚刚新添加的p元素
-    document.querySelector('#add').innerText = "I am just a paragraph"
+async function foo() {
+    while (n < text.length) {
+        const word = await p(text[n])
+        document.write(word)
+        n++
+    }
 }
-document.addEventListener('contextmenu', function (e) {
-    e.preventDefault(); // 阻止默认上下文菜单的显示
-    // 显示自定义上下文菜单的代码
-});
-function showContextMenu(x, y) {
-    var menu = document.getElementById('context-menu');
-    menu.style.left = x + 'px';
-    menu.style.top = y + 'px';
-    menu.style.display = 'block';
-}
-document.getElementById('context-menu').addEventListener('click', function (e) {
-    e.stopPropagation(); // 阻止事件冒泡
-    this.style.display = 'none'; // 隐藏菜单
-});
-document.addEventListener('click', function () {
-    document.getElementById('context-menu').style.display = 'none';
-});
+foo()

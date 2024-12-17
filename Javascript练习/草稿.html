@@ -3,24 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Continuously Write Content with Line Breaks</title>
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="insert"></div>
-        <button onclick="insert()">Insert some element</button>
-        <script src="index.js"></script>
-    </div>
-    <nav id="context-menu" class="context-menu" style="display:none;">
-        <ul>
-            <li><a href="#">选项1</a></li>
-            <li><a href="#">选项2</a></li>
-            <!-- 更多选项 -->
-        </ul>
-    </nav>
-</body>
 
+    <div id="content">这里将不断写入内容...</div>
+
+    <script>
+        // 获取元素
+        var contentDiv = document.getElementById('content');
+
+        // 定义一个变量来存储要写入的内容
+        var text = '';
+
+        // 定义一个函数，用于写入内容
+        function writeContent() {
+            // 这里可以定义写入内容的逻辑，例如增加一个字符并换行
+            text += 'A\n'; // 这里以增加字符'A'和换行符'\n'为例
+            contentDiv.innerHTML = text; // 使用innerHTML将内容写入div中，以解释换行符
+        }
+
+        // 设置定时器，每1000毫秒（1秒）调用一次writeContent函数
+        setInterval(writeContent, 1000);
+    </script>
+
+</body>
 
 </html>
