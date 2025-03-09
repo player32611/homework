@@ -1,0 +1,12 @@
+#text {
+    border: 2px solid black;
+    height: 90px;
+    width: 200px;
+    background-color: pink;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+#button1 {
+    margin: 10px;
+}
